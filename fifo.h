@@ -18,7 +18,7 @@ class Fifo {
 			mask_(0),
 			data_(nullptr) 
 	{
-			// 这里要2的倍数对齐
+			// 这里要2的次幂对齐
 			if (! is_power_of_2(size) ) {
 				std::cerr << "size is not power of 2" << std::endl ;	
 				::abort() ;
